@@ -1,0 +1,535 @@
+/* ==============================
+
+Template Name: Portfolio Website
+Template URI: Portfolio Website
+Description: Single Page Portfolio Website. Design an Awesome Website.
+Author: Sohayeb
+Author URI:
+Version: 1.0
+Support: demo@codersfoundation.com
+
+============================== */
+
+/* ==============================
+
+    CSS INDEX
+    ---------
+
+    1. Common CSS
+    2. HEADER
+    3. ABOUT
+    4. PORTFOLIO
+    5. Service
+    6. Hire Me
+    7. Contact Uss
+    8. Social Icon
+    9. Footer
+============================== */
+
+
+/* 1.Common CSS Starts */
+
+*{
+     padding: 0;
+     margin: 0;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: 'Mulish', sans-serif;
+}
+ html{
+     scroll-behavior: smooth;
+}
+ .nav_style{
+     background: #fff ;
+     -webkit-box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.5);
+     box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+ .navbar-brand{
+     font-size: 3rem;
+     font-weight: bold;
+     color: #fb7400!important;
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+ .navbar-brand:hover{
+     color: #8E8E8E!important;
+}
+ .navbar a{
+     text-decoration: none!important;
+}
+ .navbar-nav li a{
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 600;
+     letter-spacing: 2px;
+     color: #333;
+     position: relative;
+     display: inline-block;
+     padding: 5px 40px 5px 0!important;
+     text-decoration: none;
+}
+ .navbar-nav li a::after{
+     content: '';
+     position: absolute;
+     top: 110%;
+     left: 0;
+     width: 0;
+     height: 2px;
+     border-bottom: 2px solid #ff7230;
+     -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+}
+ .navbar-nav li .active{
+     color: #ff7230!important;
+}
+ .navbar-nav li a:hover{
+     color: #ff7230!important;
+}
+ .navbar-nav li a:hover::after{
+     width: 60%;
+}
+ .uk-active{
+     background: rgba(240, 90, 99, 0.3);
+     color: #fff;
+}
+ .uk-active .navbar-nav li a{
+     color: #fff!important;
+     -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+}
+ .uk-active .navbar-nav li a:hover{
+     color: #ff7230!important;
+}
+ .uk-active .navbar-brand:hover{
+     color: #fff!important;
+}
+ @media(max-width: 998px) {
+     .navbar-nav{
+         text-align: center;
+    }
+     .navbar-nav li a:hover::after{
+         width: 0;
+    }
+     .uk-active{
+         display: none;
+    }
+}
+/* Common CSS Ends */
+/* 2.Header Section css Starts*/
+ .header_text{
+     font-size: 26px;
+     color: #8c8c8c;
+     margin-top: 80px;
+}
+ .header_text2{
+     font-size: 26px;
+     color: #2d3436;
+     margin-bottom: 70px;
+}
+ .span_header_text{
+     color: #ff7230;
+}
+ .hire_me{
+     width: 160px;
+     height: 40px;
+     background: #ff7230;
+     font-size: 20px;
+     color: #fff;
+     text-transform: capitalize;
+     outline:none;
+     border: none;
+     -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+}
+ .about_me{
+     width: 160px;
+     height: 40px;
+     background: #fff;
+     font-size: 20px;
+     color: #ff7230;
+     text-transform: capitalize;
+     outline:none;
+     border: 1px solid #ff7230;
+     -webkit-transition: all 0.3s linear;
+     transition: all 0.3s linear;
+}
+ .hire_me:hover{
+     background: #fff;
+     color: #ff7230;
+     border: 1px solid #ff7230;
+}
+ .about_me:hover{
+     background: #ff7230;
+     color: #fff;
+     outline:none;
+}
+ .header_mail p{
+     margin-top: 40px;
+     font-size: 20px;
+     color: #000;
+     font-weight: 400;
+}
+ .header_mail p:nth-child(2){
+     margin-top:-20px ;
+}
+ @media(max-width: 992px) {
+     .header_text, .header_text2 {
+         text-align: center;
+    }
+}
+/*header section css starts*/
+/* 3.About Section Starts */
+ .about_section{
+     padding-top: 50px;
+}
+ .main_title h1{
+     font-weight: 500;
+     font-size: 50px;
+     text-transform: capitalize;
+     color: #000;
+     padding-bottom: 20px;
+}
+ .about_text{
+     margin-top: 30px;
+}
+ .about_text h1{
+     font-size: 33px;
+     margin-top: -20px;
+     color: #000;
+     margin-bottom: 25px;
+}
+ .about_text p{
+     font-size: 24px;
+     color: #000;
+}
+/* About Section Ends */
+/* 4.Portfolio section css starts*/
+ .expert_section{
+     padding-top: 50px;
+}
+ .main_title p{
+     font-size: 26px;
+     color: #000;
+}
+ .common_div{
+     margin-top: 80px;
+}
+ .expert_section .progress{
+     width: 90%;
+     height: 14px;
+     border-radius: 7px;
+}
+ .expert_section .pb_1{
+     width: 93%;
+     border-radius: 7px;
+     background: #ea2148;
+}
+ .expert_section .pb_2{
+     width: 83%;
+     border-radius: 7px;
+     background: #ff7230;
+}
+ .expert_section .pb_3{
+     width: 88%;
+     border-radius: 7px;
+     background: #1c9588;
+}
+ .expert_h1{
+     position: relative;
+}
+ .expert_h2{
+     position: relative;
+}
+ .expert_h3{
+     position: relative;
+}
+ .expert_h4{
+     position: relative;
+}
+ .expert_h1::after{
+     content: '93%';
+     position: absolute;
+     top: 10px;
+     right: 13%;
+     font-size: 16px;
+     color: #000;
+     font-weight: 500;
+}
+ .expert_h2::after{
+     content: '83%';
+     position: absolute;
+     top: 10px;
+     right: 13%;
+     font-size: 16px;
+     color: #000;
+     font-weight: 500;
+}
+ .expert_h3::after{
+     content: '88%';
+     position: absolute;
+     top: 10px;
+     right: 13%;
+     font-size: 16px;
+     color: #000;
+     font-weight: 500;
+}
+ .expert_h3::after{
+     content: '70%';
+     position: absolute;
+     top: 10px;
+     right: 13%;
+     font-size: 16px;
+     color: #000;
+     font-weight: 500;
+}
+ .images4{
+     margin-top: 80px ;
+}
+/*Portfolio section css ends*/
+/* 5.our services section starts*/
+ .ourservices{
+     padding-top: 70px;
+     padding-bottom: 70px;
+}
+ .services_div{
+     width: 32%;
+     background: #f6f6f6;
+     padding: 20px 10px 70px 10px;
+     margin: 50px 10px 0 0;
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+     position: relative;
+     -webkit-box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.5);
+     box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+ .services_div:hover{
+     background: #fff;
+     -webkit-box-shadow: 0 0 4px 1px grey;
+     box-shadow: 0 0 4px 1px grey;
+}
+ .services_div h2{
+     text-align: center;
+     font-size: 52px;
+     color: #ff7230;
+     position: relative;
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     margin: auto;
+     background: #ffeee6;
+     border: 1px solid transparent;
+     line-height: 65px;
+     -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .services_div h2:hover{
+     background: #fff;
+     border: 1px solid #ff7230;
+}
+ .services_div:hover .fa-heart{
+     color: #ffeee6;
+}
+ .fa-dot-circle{
+     color: #ff7230;
+}
+ .fa-heart{
+     color: #fff;
+     position: absolute;
+     bottom: 1px;
+     left: 1px;
+     -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .services_div li{
+     list-style: none;
+     font-size: 23px;
+     color: #000;
+     font-weight: 300;
+     text-transform: capitalize;
+     padding-left: 20px;
+}
+ .col-md-4{
+     padding-right: 0px!important;
+}
+/*our services section ends*/
+/* 6.hireMe_section starts*/
+ .hireMe_section{
+     padding-top: 45px;
+     padding-bottom: 45px;
+     background-image: -webkit-gradient(linear, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),url(../images/img6.jpg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/img6.jpg);
+     background-size: 100% ;
+     background-position: 100% 100%;
+     background-attachment: fixed;
+}
+ .hireMe_section h1{
+     font-size: 40px;
+     color: #ff7230;
+}
+ .hireMe_section p{
+     font-size: 32px;
+     color: #fff;
+     letter-spacing: 3px;
+}
+ .hireMe_section h3{
+     font-size: 30px;
+     color: #fff;
+     margin-top: -10px;
+     padding-bottom: 30px;
+}
+/*hireMe_section ends*/
+/* 7.contact us starts*/
+ .contactsection{
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+ .contact_img img{
+     -webkit-transform: rotateY(180deg);
+     transform: rotateY(180deg);
+}
+ .contact_share{
+     width: 100%;
+     height: auto;
+}
+ .contact_share_div{
+     padding: 20px;
+     display: -ms-flex;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-direction: column;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+     flex-direction: column;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -ms-align-items: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border-radius: 30px;
+     background: #f6f6f6;
+     border: 1px solid transparent;
+     -webkit-transition: all 0.2s linear;
+     transition: all 0.2s linear;
+}
+ .contact_share_div:hover{
+     background: #fff;
+     border: 1px solid #ff874f;
+     -webkit-filter: drop-shadow(2px 0 8px rgba(0, 0, 0, 0.2) );
+     filter: drop-shadow(2px 0 8px rgba(0, 0, 0, 0.2) );
+}
+ .contact_share_div:hover .fa{
+     color: #ff7230;
+}
+ .contact_share_div p{
+     -webkit-transition: all 0.2s linear;
+     transition: all 0.2s linear;
+}
+ .contact_share_div:hover p{
+     color: #ff7230;
+     margin: 0;
+}
+/*contact us ends*/
+/* 8.socialicons_link starts*/
+ .socialicons_link .fa-facebook-f, .socialicons_link .fa-instagram, .socialicons_link .fa-dribbble, .socialicons_link .fa-pinterest, .socialicons_link .fa-behance{
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+ .socialicons_link .fa-facebook-f:hover{
+     color: #3b5998;
+}
+ .socialicons_link .fa-instagram:hover{
+     color: #e4405f;
+}
+ .socialicons_link .fa-dribbble:hover{
+     color: #ea4c89;
+}
+ .socialicons_link .fa-pinterest:hover{
+     color: #bd081c;
+}
+ .socialicons_link .fa-behance:hover{
+     color: #131418;
+}
+/*socialicons_link ends*/
+/* 9. Footer section starts */
+ footer{
+     width: 100%;
+     line-height: 50px;
+     background: #ff7230;
+     color: #fff;
+}
+ footer p{
+     margin: 0;
+     padding: 0;
+}
+ .heart_at_bottom{
+     padding-right: 0px;
+}
+ footer .lastIcon a{
+     color: #ff2b4a;
+     position: fixed;
+     right: 0;
+     left: 90%;
+     bottom: 1rem;
+     text-align: center;
+     z-index: 99;
+     width: 3rem;
+     height: 3rem;
+     border: 1px solid #00BCD4;
+     margin:2rem 0 4rem 0;
+     text-align: center;
+     display: none;
+     background: #dbd4d5;
+     -webkit-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+}
+ footer .lastIcon a:hover{
+     background: rgba(0, 0, 0, 0);
+     border: 1px solid #ff2b4a;
+     color: #00BCD4;
+}
+/* Footer section Ends */
+ @media (max-width: 992px) {
+     .main_title h1 {
+         font-size: 40px;
+    }
+     .main_title p {
+         font-size: 18px;
+    }
+     .about_text {
+         margin-top: 30px;
+    }
+     .about_text h1 {
+         font-size: 26px;
+         font-weight: bold;
+    }
+     .about_text p {
+         font-size: 17px;
+    }
+     .contact_img {
+         margin: auto;
+    }
+     .contact_inner{
+         margin: auto;
+    }
+     .hireMe_section h1 {
+         font-size: 35px;
+         font-weight: bold;
+    }
+     .hireMe_section p {
+         font-size: 20px;
+         line-height: 1.8rem;
+    }
+     .hireMe_section h3 {
+         font-size: 25px;
+    }
+     .services_div{
+         width: 100%;
+    }
+     .contact_img img{
+         width: 100%;
+    }
+}
+ 
